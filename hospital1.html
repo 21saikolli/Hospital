@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OP Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hospital OP Management System</h1>
+        <form id="appointmentForm">
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+
+            <label for="patientAge">Age:</label>
+            <input type="number" id="patientAge" name="patientAge" required>
+
+            <label for="patientGender">Gender:</label>
+            <select id="patientGender" name="patientGender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="admitCause">Cause for Admitting:</label>
+            <input type="text" id="admitCause" name="admitCause" required>
+
+            <label for="patientWeight">Weight (kg):</label>
+            <input type="number" id="patientWeight" name="patientWeight" required>
+
+            <label for="patientHeight">Height (cm):</label>
+            <input type="number" id="patientHeight" name="patientHeight" required>
+
+            <label for="fever">Fever:</label>
+            <input type="checkbox" id="fever" name="fever">
+
+            <label for="appointmentType">Appointment Type:</label>
+            <select id="appointmentType" name="appointmentType">
+                <option value="emergency">Emergency</option>
+                <option value="phoneCall">Phone Call</option>
+                <option value="walkin">Walk-in</option>
+            </select>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+
+        <div id="appointmentInfo"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
